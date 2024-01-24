@@ -1,7 +1,7 @@
 import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import { lusitana700 } from './ui/fonts';
+import { lusitana } from './ui/fonts';
 import clsx from 'clsx';
 import Image from 'next/image';
 
@@ -23,7 +23,7 @@ export default function Page() {
           </p>
           <p
             className={clsx([
-              lusitana700.className,
+              lusitana.className,
               `text-xl text-gray-800 md:text-3xl md:leading-normal`,
             ])}
           >
