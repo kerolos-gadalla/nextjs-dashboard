@@ -20,20 +20,16 @@ export default function LoginForm() {
       <div className="flex-1 rounded-lg bg-gray-50 px-6 pb-4 pt-8">
         <h1
           className={`${lusitana.className} mb-3 text-2xl`}
-          data-tooltip-target="tooltip-hover"
+          data-tooltip-target="tooltip-default"
           data-tooltip-trigger="hover"
         >
           Please log in to continue.
           <InformationCircleIcon className="display-inline pointer-events-none left-3 top-1/2 h-[18px] w-[18px] -translate-y-1/2 text-gray-500 peer-focus:text-gray-900" />
+          <br />
+          user@nextmail.com
+          <br />
+          123456
         </h1>
-        <div
-          id="tooltip-default"
-          role="tooltip"
-          className="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"
-        >
-          Tooltip content
-          <div className="tooltip-arrow" data-popper-arrow></div>
-        </div>
 
         <div className="w-full">
           <div>
