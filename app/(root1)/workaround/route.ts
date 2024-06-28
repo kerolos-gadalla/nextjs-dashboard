@@ -1,4 +1,4 @@
-export async function GET(req, params, res) {
+export async function GET(req: Request) {
   console.log('method', req);
   const body = await req.text();
   console.log('body', body);
@@ -15,7 +15,7 @@ export async function GET(req, params, res) {
   });
 }
 
-export async function POST(req) {
+export async function POST(req: Request) {
   console.log('method', req.method);
   const body = await req.text();
   console.log('body', body);
@@ -35,7 +35,7 @@ console.log( html);
 // const html = 'Hello from Next.js! <script> alert("123") </script>';
 
 
-const getHtml = (data) => { 
+const getHtml = (data: any) => { 
 return `
 
   <script>
